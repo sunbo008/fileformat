@@ -1,0 +1,36 @@
+---
+Checks: >
+  -*,
+  bugprone-*,
+  cppcoreguidelines-no-malloc,
+  cppcoreguidelines-owning-memory,
+  cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  cppcoreguidelines-pro-bounds-pointer-arithmetic,
+  modernize-make-unique,
+  modernize-make-shared,
+  modernize-avoid-c-arrays,
+  modernize-use-nullptr,
+  modernize-use-override,
+  performance-*,
+  readability-identifier-naming
+
+WarningsAsErrors: >
+  cppcoreguidelines-no-malloc,
+  cppcoreguidelines-owning-memory
+
+CheckOptions:
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_case
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.ConstantCase
+    value: CamelCase
+  - key: readability-identifier-naming.ConstantPrefix
+    value: k
+  - key: readability-identifier-naming.EnumConstantCase
+    value: CamelCase
+
